@@ -19,7 +19,7 @@ It was necessery to change the laguage used in [Conceptnet Numberbatch](https://
 
 The first results are not satisfactory but it is a start point. 
 
-Help is always welcome if you fil interst please, send a message.
+Help is always welcome if you feel interested please, send a message.
 
 
 ## seq2seq
