@@ -9,9 +9,6 @@ It was necessery to change the laguage used in [Conceptnet Numberbatch](https://
 <i>Original Text:</i>
 <br>'O Módulo de Comando (CM) era a cabine cônica da tripulação, projetada para transportar três astronautas desde o lançamento até a órbita lunar e de volta ao pouso oceânico da Terra. Foi o único componente da espaçonave Apollo a sobreviver sem grandes mudanças na configuração, à medida que o programa evoluía desde os primeiros estudos do Apollo. Seu exterior era coberto com uma blindagem térmica ablativa e possuía seu próprio motor de sistema de controle de reação (RCS) para controlar sua atitude e orientar seu caminho de entrada atmosférico. Pára-quedas foram carregados para retardar sua descida até a queda. O módulo tinha 11,42 pés (3,48 m) de altura, 12,83 pés (3,91 m) de diâmetro e pesava aproximadamente 12.250 libras (5.560 kg)'
 
-<i>Converted Text:</i>
-<br>ORG PERSON reply ORG 's letter containing 95 theses theses checked heresy DATE forwarded GPE needed revenue indulgences pay papal dispensation tenure bishopric ORG later noted pope finger pie CARDINAL building ORG GPE
-
 <i>Generated Questions:</i>
 <br> -- : o que entrar produzem produzem produzem produzem produzem produzem produzem produzem produzem produzem produzem produzem produzem produzem produzem produzem produzem produzem produzem produzem produzem produzem
 <br> -- : o que entrar produzem produzem produzem produzem produzem produzem produzem produzem produzem produzem produzem produzem produzem produzem produzem produzem produzem produzem produzem produzem para criar
