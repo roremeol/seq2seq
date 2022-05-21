@@ -15,6 +15,13 @@ It was necessery to change the laguage used in [Conceptnet Numberbatch](https://
 <br> -- : o que entrar produzem produzem produzem produzem produzem produzem produzem produzem produzem produzem produzem produzem produzem produzem produzem produzem produzem produzem produzem para criar 95
 
 
+## fork impressions
+
+The first results are not satisfactory but it is a start point. 
+
+Help is always welcome if you fil interst please, send a message.
+
+
 ## seq2seq
 
 Universal sequence-to-sequence model with attention and beam search for inference decoding. Should work for text summarization, 
