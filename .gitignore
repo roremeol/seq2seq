@@ -1,0 +1,5 @@
+ckpt
+data/**
+data_bk
+squad-pt/**
+model.pyc

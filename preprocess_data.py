@@ -3,8 +3,13 @@ import spacy
 import numpy as np
 import pandas as pd
 
+
+import sys
+reload(sys)
+sys.setdefaultencoding('utf-8')
+
 # Load up spacy model and import stop words
-nlp = spacy.load('en_core_web_sm')
+nlp = spacy.load('pt_core_news_lg')
 from spacy.lang.en import STOP_WORDS
 for word in STOP_WORDS:
     lexeme = nlp.vocab[word]
@@ -92,7 +97,7 @@ def preprocess_data(data, remove_stopwords=True, replace_entities=False):
 def load_embeddings(embeddings_index, filepath):
     """Load Numberbatch word embeddings"""
     print('Loading Conceptnet Numberbatch word embeddings')
-    with open(filepath, encoding='utf-8') as f:
+    with open(filepath) as f: 
         for line in f:
             values = line.split(' ')
             word = values[0]
@@ -321,7 +326,7 @@ if pickle_parsed_data:
 #==============================================================================
 # # Load Numberbatch word embeddings
 #==============================================================================
-filepath = '../numberbatch-en-17.06.txt'
+filepath = 'data/numberbatch-19.08.txt'
 embeddings_index = {}
 load_embeddings(embeddings_index, filepath)
 

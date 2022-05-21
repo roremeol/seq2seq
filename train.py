@@ -30,10 +30,10 @@ assert len(vocab2int) == len(int2vocab)
 #==============================================================================
 # # Set the Hyperparameters
 #==============================================================================
-epochs = 100
-batch_size = 128
+epochs = 20#100
+batch_size = 200#128
 rnn_size = 512
-num_layers = 2
+num_layers = 3#2 
 learning_rate = 0.005
 keep_probability = 0.8     
 beam_width = 20

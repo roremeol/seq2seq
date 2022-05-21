@@ -5,8 +5,12 @@ from random import randint
 import tensorflow as tf
 from tensorflow.contrib.seq2seq.python.ops import beam_search_ops
 
+import sys
+reload(sys)
+sys.setdefaultencoding('utf-8')
+
 # Load Spacy
-nlp = spacy.load('en_core_web_sm')
+nlp = spacy.load('pt_core_news_sm')
 from spacy.lang.en import STOP_WORDS
 for word in STOP_WORDS:
     lexeme = nlp.vocab[word]

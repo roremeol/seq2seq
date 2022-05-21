@@ -1,3 +1,23 @@
+## fork intesion
+
+The ideia behind this fork is to train a AI to generate questions using Portuguese. For that i uses [SQuAD-pt](https://huggingface.co/datasets/squad_v1_pt) a translated version of the famouse dataset [SQuAD](https://rajpurkar.github.io/SQuAD-explorer/) to Portuguese.
+
+It was necessery to change the laguage used in [Conceptnet Numberbatch](https://github.com/commonsense/conceptnet-numberbatch) from english to multilingual and [spaCy 2.0](https://spacy.io/) to pt_core_news_sm to handle it
+
+## fork first results
+
+<i>Original Text:</i>
+<br>'O Módulo de Comando (CM) era a cabine cônica da tripulação, projetada para transportar três astronautas desde o lançamento até a órbita lunar e de volta ao pouso oceânico da Terra. Foi o único componente da espaçonave Apollo a sobreviver sem grandes mudanças na configuração, à medida que o programa evoluía desde os primeiros estudos do Apollo. Seu exterior era coberto com uma blindagem térmica ablativa e possuía seu próprio motor de sistema de controle de reação (RCS) para controlar sua atitude e orientar seu caminho de entrada atmosférico. Pára-quedas foram carregados para retardar sua descida até a queda. O módulo tinha 11,42 pés (3,48 m) de altura, 12,83 pés (3,91 m) de diâmetro e pesava aproximadamente 12.250 libras (5.560 kg)'
+
+<i>Converted Text:</i>
+<br>ORG PERSON reply ORG 's letter containing 95 theses theses checked heresy DATE forwarded GPE needed revenue indulgences pay papal dispensation tenure bishopric ORG later noted pope finger pie CARDINAL building ORG GPE
+
+<i>Generated Questions:</i>
+<br> -- : o que entrar produzem produzem produzem produzem produzem produzem produzem produzem produzem produzem produzem produzem produzem produzem produzem produzem produzem produzem produzem produzem produzem produzem
+<br> -- : o que entrar produzem produzem produzem produzem produzem produzem produzem produzem produzem produzem produzem produzem produzem produzem produzem produzem produzem produzem produzem produzem para criar
+<br> -- : o que entrar produzem produzem produzem produzem produzem produzem produzem produzem produzem produzem produzem produzem produzem produzem produzem produzem produzem produzem produzem para criar 95
+
+
 ## seq2seq
 
 Universal sequence-to-sequence model with attention and beam search for inference decoding. Should work for text summarization, 

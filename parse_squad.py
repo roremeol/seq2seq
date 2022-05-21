@@ -48,7 +48,7 @@ def parse_squad(dataset):
 #==============================================================================
 # # PARSE AND SAVE TRAIN DATA
 #==============================================================================
-squad_train_filepath = 'data/train-v1.1.json'
+squad_train_filepath = 'squad-pt/squad-train-v1.1.json'
 save_path = 'data/parsed_train_data.json'
 
 # Load squad train dataset
@@ -62,7 +62,7 @@ json.dump(parsed_train_squad, open(save_path, 'w'))
 # # PARSE AND SAVE DEV DATA
 #==============================================================================
 # Filepath to squad dataset and path where to save the parsed dataset  
-squad_dev_filepath = 'data/dev-v1.1.json'
+squad_dev_filepath = 'squad-pt/squad-dev-v1.1.json'
 save_path = 'data/parsed_dev_data.json'
 
 # Load squad dev dataset
