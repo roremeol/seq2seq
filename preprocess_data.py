@@ -10,7 +10,7 @@ sys.setdefaultencoding('utf-8')
 
 # Load up spacy model and import stop words
 nlp = spacy.load('pt_core_news_lg')
-from spacy.lang.en import STOP_WORDS
+from spacy.lang.pt import STOP_WORDS
 for word in STOP_WORDS:
     lexeme = nlp.vocab[word]
     lexeme.is_stop = True

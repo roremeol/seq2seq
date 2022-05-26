@@ -4,6 +4,7 @@ import os
 from random import randint
 import tensorflow as tf
 from tensorflow.contrib.seq2seq.python.ops import beam_search_ops
+from pandas import *
 
 import sys
 reload(sys)
@@ -11,12 +12,13 @@ sys.setdefaultencoding('utf-8')
 
 # Load Spacy
 nlp = spacy.load('pt_core_news_sm')
-from spacy.lang.en import STOP_WORDS
+from spacy.lang.pt import STOP_WORDS
 for word in STOP_WORDS:
     lexeme = nlp.vocab[word]
     lexeme.is_stop = True
 
 def load_pickle(filename):
+
     """Loads up the pickled dataset for further parsing and preprocessing"""
     documents_f = open('data/'+filename+'.pickle', 'rb')
     data = pickle.load(documents_f)
@@ -53,6 +55,30 @@ def text_to_seq(input_sequence):
     """Prepare the text for the model"""
     text = clean_text(input_sequence)
     return [vocab2int.get(word, vocab2int['<UNK>']) for word in text.split()]
+
+
+
+def show_ents(text):
+    """Print all ents to show the possibilities of the output questiom"""
+    spacy_text = nlp(text)
+    text_ents  = [(str(ent.text), str(ent.label_), str(spacy.explain(ent.label_))) for ent in spacy_text.ents]
+    return text_ents
+
+def converted_text(text):
+    """Print text with ents"""
+    spacy_text = nlp(text)
+    text_ents = [(str(ent), str(ent.label_)) for ent in spacy_text.ents]
+    
+    text = text.lower()
+    # Replace entities
+    for ent in text_ents:
+        replacee = str(ent[0].lower())
+        replacer = str(ent[1])
+        try:
+            text = text.replace(replacee, replacer)
+        except:
+            pass
+    return text
 
 int2vocab = load_pickle('int2vocab')
 vocab2int = load_pickle('vocab2int')
@@ -104,6 +130,11 @@ for i in range(batch_size):
 
 print('Original Text:', input_sequence.encode('utf-8').strip())
 
+print('\nConverted Text:')
+print(converted_text(input_sequence).encode('utf-8').strip())
+
+print('\nConverted Text Explain:')
+print(DataFrame(show_ents(input_sequence)))
+
 print('\nGenerated Questions:')
-for index in range(beam_width):
-    print(' -- : {}'.format(" ".join([int2vocab[i] for i in new_logits[1][index] if i != pad and i != -1])))
+

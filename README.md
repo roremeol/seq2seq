@@ -1,21 +1,24 @@
-## fork intesion
+## Fork - Intesion
 
 The ideia behind this fork is to train a AI to generate questions using Portuguese. For that i uses [SQuAD-pt](https://huggingface.co/datasets/squad_v1_pt) a translated version of the famouse dataset [SQuAD](https://rajpurkar.github.io/SQuAD-explorer/) to Portuguese.
 
 It was necessery to change the laguage used in [Conceptnet Numberbatch](https://github.com/commonsense/conceptnet-numberbatch) from english to multilingual and [spaCy 2.0](https://spacy.io/) to pt_core_news_sm to handle it
 
-## fork first results
+## Fork - Results
 
 <i>Original Text:</i>
-<br>'O Módulo de Comando (CM) era a cabine cônica da tripulação, projetada para transportar três astronautas desde o lançamento até a órbita lunar e de volta ao pouso oceânico da Terra. Foi o único componente da espaçonave Apollo a sobreviver sem grandes mudanças na configuração, à medida que o programa evoluía desde os primeiros estudos do Apollo. Seu exterior era coberto com uma blindagem térmica ablativa e possuía seu próprio motor de sistema de controle de reação (RCS) para controlar sua atitude e orientar seu caminho de entrada atmosférico. Pára-quedas foram carregados para retardar sua descida até a queda. O módulo tinha 11,42 pés (3,48 m) de altura, 12,83 pés (3,91 m) de diâmetro e pesava aproximadamente 12.250 libras (5.560 kg)'
+<br>'Olhando para aém dos pousos lunares tripulados, a NASA investigou várias aplicações pós-lunares para o hardware Apollo. A Apollo Extension Series (Apollo X) propôs até 30 vôos para a órbita terrestre, usando o espaço no SLA (Spacecraft Lunar Module Adapter) para abrigar um pequeno laboratório orbital (oficina). Os astronautas continuariam a usar o CSM como uma balsa para a estação. Este estudo foi seguido pelo design de uma oficina orbital maior a ser construída em órbita a partir de um estágio superior vazio do S-IVB Saturn, e cresceu no Programa de Aplicações Apollo (AAP). O workshop deveria ser complementado pelas missões Apollo Telescope, que substituiriam o equipamento e o motor do LM por um observatório de telescópio solar. O plano mais ambicioso exigia o uso de um S-IVB vazio como uma espaçonave interplanetária para uma missão aérea de Vênus.'
+
+<i>Converted Text:</i>
+<br>'olhando para além dos pousos lunares tripulados, a ORG investigou várias aplicações pós-lunares para o MISC. a MISC (MISC) propôs até 30 vôos para a órbita terrestre, usando o espaço no ORG (MISC) para abrigar um pequeno laboratório orbital (oficina). os astronautas continuariam a usar o ORG como uma balsa para a estação. este estudo foi seguido pelo design de uma oficina orbital maior a ser construída em órbita a partir de um estágio superior vazio do MISC, e cresceu no MISC (ORG). o workshop deveria ser complementado pelas missões MISC, que substituiriam o equipamento e o motor do ORG por um observatório de telescópio solar. o plano mais ambicioso exigia o uso de um MISC vazio como uma espaçonave interplanetária para uma missão aérea de LOC.'
 
 <i>Generated Questions:</i>
-<br> -- : o que entrar produzem produzem produzem produzem produzem produzem produzem produzem produzem produzem produzem produzem produzem produzem produzem produzem produzem produzem produzem produzem produzem produzem
-<br> -- : o que entrar produzem produzem produzem produzem produzem produzem produzem produzem produzem produzem produzem produzem produzem produzem produzem produzem produzem produzem produzem produzem para criar
-<br> -- : o que entrar produzem produzem produzem produzem produzem produzem produzem produzem produzem produzem produzem produzem produzem produzem produzem produzem produzem produzem produzem para criar 95
+<br> -- : como foi chamado o MISC <EOS> <EOS> <EOS> <EOS>
+<br> -- : como foi chamado o MISC <EOS> <EOS> <EOS>
+<br> -- : qual foi o melhor uso de MISC <EOS> <EOS> <EOS> <EOS> <EOS>
 
 
-## fork impressions
+## Fork - Comments
 
 The first results are not satisfactory but it is a start point. 
 
